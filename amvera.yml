@@ -6,9 +6,8 @@ build:
     - package.json
   artifacts:
     - index.js
-    - node_modules
     - database.db
 run:
-  command: node index.js
+  command: npm install && node index.js
   persistence:
     - database.db
