@@ -1,0 +1,14 @@
+meta:
+  environment: node
+  toolchain: npm
+build:
+  requirements:
+    - package.json
+  artifacts:
+    - index.js
+    - node_modules
+    - database.db
+run:
+  command: node index.js
+  persistence:
+    - database.db
